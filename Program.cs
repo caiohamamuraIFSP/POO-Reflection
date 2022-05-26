@@ -11,7 +11,7 @@ namespace dotnet
         {
             IEnumerable<string> types = from t in AppDomain.CurrentDomain.GetAssemblies()
                                         from s in t.GetTypes()
-                                        where s.GetInterface("IEstrategiaArea") != null
+                                        where s.GetInterface(nameof(IEstrategiaArea)) != null
                                         select s.ToString();
             return types.ToList();
         }
