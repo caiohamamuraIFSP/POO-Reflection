@@ -19,7 +19,7 @@ public class Poligonos
         this.estrategia = estrategia;
     }
 
-    public void mudaForma(IEstrategiaArea? estrategiaMudanca)
+    public void mudaForma(IEstrategiaArea estrategiaMudanca)
     {
         if (estrategiaMudanca == null)
             estrategia = estrategiaNula;
